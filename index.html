@@ -13,11 +13,19 @@
         </div>
         
         <div id="vue-app" class="container">
-                <h1>Data Binding</h1>
-                <!-- v-bind:href OR :href -->
-                <a v-bind:href="website"> The Net Ninja</a><br/>
-                <input type="text" :value="job"><br/>
-                <span v-html="websiteTag"></span>
+                <h1>Event</h1>
+                <!--
+                    <button class="btn btn-primary" v-on:click="age++">Add a year</button>
+                    <button class="btn btn-danger" v-on:click="age--">Substract a year</button>
+                -->
+                <!--
+                    v-on:click    <=>  @click
+                    v-on:dbclick  <=>  @:dbclick
+                -->
+                <button class="btn btn-primary" v-on:click="add(1)">Add a year</button>
+                <button class="btn btn-danger" v-on:click="substract(1)">Substract a year</button>
+                <p>My age is {{age}}</p>
+                <div id="canvas" v-on:mousemove="updateXY">{{X}} , {{Y}}</div>
         </div>
         
         <footer>

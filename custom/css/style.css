@@ -4,3 +4,10 @@ h1{
     font-family: 'Trebuchet MS';
     margin: 30px auto; 
 }
+
+#canvas{
+    width: 600px;
+    padding: 200px 20px;
+    text-align: center;
+    border: 1px solid #333;
+}
