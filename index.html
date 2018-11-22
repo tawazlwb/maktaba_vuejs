@@ -12,8 +12,10 @@
             <h1 class="jumbotron-heading">Maktaba</h1>
         </div>
         
-        <div class="container">
-                
+        <div id="vue-app" class="container">
+                <h1>{{greet('afternoon')}}</h1>
+                <p>Name: {{name}}</p>
+                <p>Job: {{job}}</p>
         </div>
         
         <footer>
@@ -24,7 +26,7 @@
             <script src="node_modules/vue/dist/vue.min.js"></script>
 
             
-            <script src="custom/js/script.js"></script>
+            <script src="custom/js/app.js"></script>
         </footer>
     </body>
 </html>
