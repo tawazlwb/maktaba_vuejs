@@ -13,9 +13,11 @@
         </div>
         
         <div id="vue-app" class="container">
-                <h1>{{greet('afternoon')}}</h1>
-                <p>Name: {{name}}</p>
-                <p>Job: {{job}}</p>
+                <h1>Data Binding</h1>
+                <!-- v-bind:href OR :href -->
+                <a v-bind:href="website"> The Net Ninja</a><br/>
+                <input type="text" :value="job"><br/>
+                <span v-html="websiteTag"></span>
         </div>
         
         <footer>
